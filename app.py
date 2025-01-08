@@ -9,7 +9,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
