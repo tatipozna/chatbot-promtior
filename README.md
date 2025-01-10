@@ -12,6 +12,8 @@ A second challenge arose during deployment when I needed to remove the OpenAI AP
 
 # Implementation Overview
 ## Component Diagram
+<img width="670" alt="image" src="https://github.com/user-attachments/assets/7a253a91-46c7-4a00-8d3f-f9c9eb2d270e" />
+
 
 
 ## Core Functionality
