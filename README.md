@@ -11,6 +11,9 @@ A second challenge arose during deployment when I needed to remove the OpenAI AP
 
 
 # Implementation Overview
+## Component Diagram
+
+
 ## Core Functionality
 The chatbot leverages GPT-4 from OpenAI to process user queries and provide context-based answers. The application integrates data from two main sources: the Promtior website and a PDF document containing relevant information. This data is combined and stored in a vector store using FAISS, which ensures fast and accurate retrieval during query processing.
 
