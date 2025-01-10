@@ -24,13 +24,13 @@ JavaScript is responsible for handling user interactions, including managing the
 
 
 ## Key Technologies
-LangChain: facilitates conversation management and data retrieval for query processing.
-FastAPI: provides the backend framework to expose the chatbot API.
-FAISS: used for efficient data storage and retrieval from the combined sources (PDF and website).
-OpenAI GPT-4: powers the chatbot's ability to generate contextual and intelligent responses.
-PyMuPDF: extracts text from the Promtior PDF for use in chatbot responses.
-Railway: deployed the application to the cloud, ensuring smooth operation.
-HTML & JavaScript: used to build the chatbot’s simple frontend interface.
+- *LangChain:* facilitates conversation management and data retrieval for query processing.
+- *FastAPI:* provides the backend framework to expose the chatbot API.
+- *FAISS:* used for efficient data storage and retrieval from the combined sources (PDF and website).
+- *OpenAI GPT-4:* powers the chatbot's ability to generate contextual and intelligent responses.
+- *PyMuPDF:* extracts text from the Promtior PDF for use in chatbot responses.
+- *Railway:* deployed the application to the cloud, ensuring smooth operation.
+- *HTML & JavaScript:* used to build the chatbot’s simple frontend interface.
 
 ## Key Files
 app.py: the core file of the application. It exposes the main routes for the chatbot, including / for the welcome page and /chat for processing user queries. It integrates data from the website and the PDF document, stores it in FAISS, and uses GPT-4 to generate responses based on user input.
