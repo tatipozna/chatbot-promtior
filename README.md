@@ -14,6 +14,15 @@ A second challenge arose during deployment when I needed to remove the OpenAI AP
 ## Component Diagram
 <img width="670" alt="image" src="https://github.com/user-attachments/assets/7a253a91-46c7-4a00-8d3f-f9c9eb2d270e" />
 
+The diagram shows the main components of the chatbot system and their relationships. The User interacts with the system through the Frontend, which communicates with the Backend. The Backend is responsible for querying the FAISS database for relevant data and interacting with OpenAI GPT-4 for generating a response. The Frontend receives the response from the Backend and displays it to the User.
+
+### Flow
+1. User submits a query via the Frontend.
+2. The Frontend sends the query to the Backend.
+3. The Backend queries the FAISS database for relevant data.
+4. The Backend sends the query to OpenAI GPT-4 for a response.
+5. The Backend sends the generated response back to the Frontend.
+6. The Frontend displays the response to the User.
 
 
 ## Core Functionality
