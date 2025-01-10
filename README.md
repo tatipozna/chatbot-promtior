@@ -40,18 +40,15 @@ JavaScript is responsible for handling user interactions, including managing the
 
 ## Deployment
 The application is deployed on the Railway platform for easy management and scalability. The deployment process involves the use of a Procfile, which ensures proper execution of the application via uvicorn.
-GitHub tntegration: the project's GitHub repository was directly connected to Railway, allowing Railway to detect and build the project automatically. The Procfile played an essential role, specifying the command to run the application with uvicorn, which serves the FastAPI app.
-Environment configuration: the necessary environment variable, OPENAI_API_KEY, was securely configured within Railway’s environment settings. This ensured that the application could access OpenAI’s API securely, without exposing sensitive information in the code.
-Deployment and testing: Railway automatically deployed the application to the cloud and provided a public URL for testing the chatbot’s functionality. The URL to access the live chatbot is: https://chatbot-promtior-production.up.railway.app/ . This URL was used to verify that the chatbot was responding correctly to user queries in the live environment.
+- *GitHub integration:* the project's GitHub repository was directly connected to Railway, allowing Railway to detect and build the project automatically. The Procfile played an essential role, specifying the command to run the application with uvicorn, which serves the FastAPI app.
+- *Environment configuration:* the necessary environment variable, OPENAI_API_KEY, was securely configured within Railway’s environment settings. This ensured that the application could access OpenAI’s API securely, without exposing sensitive information in the code.
+- *Deployment and testing:* Railway automatically deployed the application to the cloud and provided a public URL for testing the chatbot’s functionality. The URL to access the live chatbot is: https://chatbot-promtior-production.up.railway.app/ . This URL was used to verify that the chatbot was responding correctly to user queries in the live environment.
 
 ## Running the Project Locally
-Clone the GitHub repository, using the following command: 
-git clone https://github.com/tatipozna/chatbot-promtior.git
-Install dependencies, using pip and the requirements.txt file:
-pip install -r requirements.txt
-Run the application, using the following command with uvicorn:
-uvicorn app:app --reload
-Access the application: it will run at http://127.0.0.1:8000, where the chatbot can be tested locally.
+1. Clone the GitHub repository, using the following command: git clone https://github.com/tatipozna/chatbot-promtior.git
+2. Install dependencies, using pip and the requirements.txt file: pip install -r requirements.txt
+3. Run the application, using the following command with uvicorn: uvicorn app:app --reload
+4. Access the application: it will run at http://127.0.0.1:8000, where the chatbot can be tested locally.
 
 ## Possible Future Improvements
 The user interface could be enhanced to make it more interactive and visually appealing, with features such as message bubbles or additional customization options for a more modern design. Additionally, the efficiency of retrieving responses could be optimized by improving the extraction process from the PDF and the website, which would lead to faster and more accurate answers. Finally, expanding the database with more detailed information about Promtior's services would enhance the chatbot's ability to generate more precise and comprehensive responses.
