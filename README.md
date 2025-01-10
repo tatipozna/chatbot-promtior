@@ -33,10 +33,10 @@ JavaScript is responsible for handling user interactions, including managing the
 - *HTML & JavaScript:* used to build the chatbot’s simple frontend interface.
 
 ## Key Files
-app.py: the core file of the application. It exposes the main routes for the chatbot, including / for the welcome page and /chat for processing user queries. It integrates data from the website and the PDF document, stores it in FAISS, and uses GPT-4 to generate responses based on user input.
-Procfile: essential for deployment on the Railway platform. It specifies the command to run the application with uvicorn, ensuring the application is executed correctly in a production environment.
-index.html: the frontend file that allows users to interact with the chatbot. Built with HTML, CSS, and JavaScript, it provides the interface for users to input queries and receive real-time responses from the chatbot.
-requirements.txt: lists the necessary dependencies for the project, such as LangChain, OpenAI, FastAPI, FAISS, PyMuPDF, and others, to ensure the proper setup of the environment.
+- *app.py:* the core file of the application. It exposes the main routes for the chatbot, including / for the welcome page and /chat for processing user queries. It integrates data from the website and the PDF document, stores it in FAISS, and uses GPT-4 to generate responses based on user input.
+- *Procfile:* essential for deployment on the Railway platform. It specifies the command to run the application with uvicorn, ensuring the application is executed correctly in a production environment.
+- *index.html:* the frontend file that allows users to interact with the chatbot. Built with HTML, CSS, and JavaScript, it provides the interface for users to input queries and receive real-time responses from the chatbot.
+- *requirements.txt:* lists the necessary dependencies for the project, such as LangChain, OpenAI, FastAPI, FAISS, PyMuPDF, and others, to ensure the proper setup of the environment.
 
 ## Deployment
 The application is deployed on the Railway platform for easy management and scalability. The deployment process involves the use of a Procfile, which ensures proper execution of the application via uvicorn.
